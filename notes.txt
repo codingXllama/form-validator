@@ -1,0 +1,9 @@
+In a form we need to have the following tags 
+
+formStart  - partent  <form>
+label - used for accessibility and it contains instructions for the form (user prompt) <label> </label>
+input - this the input data that will be passed into our form ex. text,pw,email,etc. (takes user data) <input type ="email">  //this tag does not need a closing tag
+formEnd - end of form </form>
+
+
+-**- you can also add form attributes  (maxlength, minlength, required, value, type,etc.)
