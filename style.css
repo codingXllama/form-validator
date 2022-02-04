@@ -1,3 +1,6 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+
 html {
   /* preventing padding from adding extra length and width to the page - so we don't have the horizontal line */
   box-sizing: border-box;
@@ -6,5 +9,26 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: dodgerblue;
+  background: #ac8ff0;
+  font-family: Sen, sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #fff;
+  width: 480px;
+  height: 360px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  /*  */
+  box-shadow: 0 5px 30px 10px rgba(85, 102, 255, 0.4);
 }

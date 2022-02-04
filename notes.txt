@@ -7,3 +7,13 @@ formEnd - end of form </form>
 
 
 -**- you can also add form attributes  (maxlength, minlength, required, value, type,etc.)
+
+* Box-shadow *
+
+>➡️ it contains 5 values
+
+1️⃣  Horizontal offset - shadow that goes left to right (set it to 0 if you want it to go top to bottom)
+2️⃣  vertical offset - it's the top to bottom value (A positive value means the shadown will be on the bottom and negative value means it will be on the top) ex. 5px means 5px shadow on bottom
+3️⃣ shadow blur - how much out do you want to see the shadow
+4️⃣ shadow spread - this is the shadow size 
+5️⃣ rgba value - color (rgba(0,0,0,alpha/opacity)) ex. rgba(0,0,0,0.4)
