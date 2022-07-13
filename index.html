@@ -20,28 +20,27 @@
 
       <h1>Sign up Today!</h1>
 
-
       <!-- Form start -->
       <form action="" id="form">
 
         <!-- Full Name - Start-->
         <div class="form-group">
           <label for="name">Full Name</label>
-          <input type="text" id="name" placeholder="Full Name">
+          <input type="text" id="name" placeholder="Full Name" required minlength="3" maxlength="100">
         </div>
         <!-- Full Name - End -->
 
         <!-- Phone number -Start -->
         <div class="form-group">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" placeholder="111-222-3333">
+          <input type="tel" id="phone" placeholder="111-222-3333" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
         </div>
         <!-- Phone Number - End -->
 
         <!-- Email - Start -->
-        <div class="form-group">
+        <div class=" form-group">
           <label for="Email">Email</label>
-          <input type="email" id="email" placeholder="email@address.com">
+          <input type="email" id="email" placeholder="email@address.com" required>
         </div>
         <!-- Email - End -->
 
@@ -49,7 +48,7 @@
         <!-- Website -start -->
         <div class="form-group">
           <label for="website">Website URL</label>
-          <input type="url" id="website" placeholder="codingxllama.github.io">
+          <input type="url" id="website" placeholder="http://codingxllama.github.io" required>
         </div>
         <!-- Website - End -->
 
@@ -57,7 +56,9 @@
         <!-- Password -start -->
         <div class="form-group">
           <label for="password1">Password</label>
-          <input type="password" id="password1" placeholder="Create a password">
+          <input type="password" id="password1" placeholder="Create a password" required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+            title="Please include at least 1 special character,lower case and number">
         </div>
         <!-- Password - End -->
 
@@ -65,25 +66,20 @@
         <!-- Password Confirm -start -->
         <div class="form-group">
           <label for="password2">Confirm Password</label>
-          <input type="password" id="password12" placeholder="Confirm Password">
+          <input type="password" id="password12" placeholder="Confirm Password" required>
         </div>
         <!-- Confirm Password - End -->
         <!-- Form Button -->
         <button type="submit" id="regBtn">Register</button>
+        <!-- Error/Success Message -->
+        <div class="message-container">
+          <h3 id="message">Don't Hesitate!</h3>
+        </div>
+
       </form>
       <!-- Form end -->
-
-
-
-
-      <!-- Error/Success Message -->
-      <div class="message-container">
-        <h3 id="message">Don't Hesitate!</h3>
-      </div>
-
     </div>
 
-    </form>
     <!-- Script -->
     <script type="text/javascript" src="script.js"></script>
   </body>
