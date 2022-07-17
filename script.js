@@ -31,6 +31,12 @@ function validateForm() {
     password1_Element.style.borderColor = "red";
     password2_Element.style.borderColor = "red";
   }
+  // If the form is valid and passwords match
+  if (isValid && passwordMatch) {
+    message.textContent = "Successfully Registered!";
+    message.style.color = "green";
+    messageContainer.style.borderColor = "green";
+  }
 }
 
 function processFormData(e) {
