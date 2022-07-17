@@ -6,14 +6,31 @@ const message = document.getElementById("message");
 const regBtn = document.getElementById("regBtn");
 
 let isValid = false;
+let passwordMatch = false;
 
 function validateForm() {
   // Using the constraint API
   isValid = form.checkValidity();
-  // styling the main message css for invalid attempt
-  message.textContent = "Please Fill Out All Fields!";
-  message.style.color = "red";
-  messageContainer.style.borderColor = "red";
+  if (!isValid) {
+    // styling the main message css for invalid attempt
+    message.textContent = "Please Fill Out All Fields!";
+    message.style.color = "red";
+    messageContainer.style.borderColor = "red";
+  }
+  // Check to see if passwords are match
+  if (password1_Element.value === password2_Element.value) {
+    passwordMatch = true;
+    password1_Element.style.borderColor = "green";
+    password2_Element.style.borderColor = "green";
+    alert("match!");
+  } else {
+    passwordMatch = false;
+    message.textContent = "Make sure passwords match.";
+    message.style.color = "red";
+    messageContainer.style.borderColor = "red";
+    password1_Element.style.borderColor = "red";
+    password2_Element.style.borderColor = "red";
+  }
 }
 
 function processFormData(e) {
