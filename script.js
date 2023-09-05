@@ -11,8 +11,10 @@ let passwordMatch = false;
 function validateForm() {
   // Using the constraint API
   isValid = form.checkValidity();
+  // alert("jo");
   if (!isValid) {
     // styling the main message css for invalid attempt
+    console.log("hi");
     message.textContent = "Please Fill Out All Fields!";
     message.style.color = "red";
     messageContainer.style.borderColor = "red";
