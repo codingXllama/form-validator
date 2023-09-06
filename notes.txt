@@ -1,6 +1,6 @@
 In a form we need to have the following tags 
 
-formStart  - partent  <form>
+formStart  - parent  <form>
 label - used for accessibility and it contains instructions for the form (user prompt) <label> </label>
 input - this the input data that will be passed into our form ex. text,pw,email,etc. (takes user data) <input type ="email">  //this tag does not need a closing tag
 formEnd - end of form </form>
@@ -10,7 +10,7 @@ formEnd - end of form </form>
 
 * Box-shadow *
 
->➡️ it contains 5 values
+➡️ it contains 5 values
 
 1️⃣  Horizontal offset - shadow that goes left to right (set it to 0 if you want it to go top to bottom)
 2️⃣  vertical offset - it's the top to bottom value (A positive value means the shadown will be on the bottom and negative value means it will be on the top) ex. 5px means 5px shadow on bottom

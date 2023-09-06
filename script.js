@@ -4,6 +4,7 @@ const password2_Element = document.getElementById("password2");
 const messageContainer = document.querySelector(".message-container");
 const message = document.getElementById("message");
 const regBtn = document.getElementById("regBtn");
+console.log("hi");
 
 let isValid = false;
 let passwordMatch = false;
@@ -14,7 +15,6 @@ function validateForm() {
   // alert("jo");
   if (!isValid) {
     // styling the main message css for invalid attempt
-    console.log("hi");
     message.textContent = "Please Fill Out All Fields!";
     message.style.color = "red";
     messageContainer.style.borderColor = "red";
@@ -44,6 +44,7 @@ function validateForm() {
 function processFormData(e) {
   e.preventDefault(); // prevents the page from refreshing
 
+  console.log("test");
   // Validating the from
   validateForm();
 }

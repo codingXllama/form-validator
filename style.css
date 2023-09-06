@@ -22,14 +22,14 @@ body {
 .container {
   width: 480px;
   height: 630px;
-  background: white;
+  background: rgb(255, 255, 255);
   display: flex;
   /* justify-content: center; */
 
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0 5px 30px 10px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 5px 30px 10px rgba(255, 255, 255, 0.167);
 }
 /* From Title */
 
