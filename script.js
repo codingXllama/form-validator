@@ -44,7 +44,7 @@ function validateForm() {
 function processFormData(e) {
   e.preventDefault(); // prevents the page from refreshing
 
-  console.log("test");
+  // console.log("test");
   // Validating the from
   validateForm();
 }
