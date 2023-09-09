@@ -52,7 +52,7 @@ function storeFormData() {
     website: form.website.value,
   };
   // We can use this data to hook it up to a server, db, etc.
-  console.log(user);
+  // console.log(user);
 }
 
 function processFormData(e) {
